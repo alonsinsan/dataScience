@@ -79,7 +79,7 @@ El sesgo en estadística se refiere a la tendencia de un estimador a desviarse d
 Intuitivamente, se puede pensar en el valor esperado como un promedio ponderado de los valores de una variable aleatoria.  
 
 En el caso de que la variable aleatoria sea discreta, la fórmula para el valor esperado de una variable aleatoria $X$ es:  
-$E[X]=\frac{1}{n}\sum_{x=-\infty}^{\infty}xP(X=x)$  
+$E[X]=\sum_{x=-\infty}^{\infty}xP(X=x)$  
 donde P(X) es la función de probabilidad de la variable aleatoria.  
 
 Para el caso de una variable aleatoria continua, la fórmula para el valor esperado de una variable aleatoria $X$ es:  

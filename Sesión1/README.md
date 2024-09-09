@@ -20,6 +20,7 @@ Una segunda instalación de Python puede ser a través de [Anaconda](https://www
 Dentro de estas herramientas, la más utilizada es Jupyter Notebook que es un tipo de documento en el que puedes combinar código y texto por lo que se vuelve una herramienta muy útil para generar reportes automatizados.  La terminación de este tipo de archivos es _.ipynb_  
 
 ![Vista de Jupyter Notebook](img/jupyter.png)
+
 Instalar desde Anaconda Navigator es un gran camino cuando no queremos meternos en complicaciones de ubicaciones de python y si queremos también tener programas con los cuales interactuar con Python; la desventaja de esta distribución es que puede ser muy pesada y ocupar mucho espacio de memoria en la computadora.  
 Si bien Jupyter Notebook es una gran herramienta por lo versátil de ir corriendo código y visualizando los resultados, no es la única forma en la que se puede correr el lenguaje python. La otra forma más estructurada de hacerlo es a través de un script de python (con terminación de archivo _.py_) y corriendo el script a través de una terminal que entienda el lenguaje python. La desventaja de este método es que se corre todo el script cada vez que ponemos el comando en la terminal y no sólo una celda con un cacho específico de código como en Jupyter Notebook.  
 
@@ -50,9 +51,11 @@ Para que esto sea más sencillo, existen los ambientes en python y es realmente 
 Podemos crear ambientes desde alguna terminal de python (con la instalación de la distribución de anaconda se instala el programa _Anaconda Prompt_ y desde ahí podemos hacerlo) de la siguiente forma:
 
 1. Abrimos la terminal buscando anaconda prompt en el buscador
+
 ![](img/ambiente1.png)
 
 La terminal muestra el ambiente actual en el que se encuentra la terminal, en este caso está en el entorno base que es el ambiente general de la distribución de python.
+
 ![](img/ambiente2.png)
 
 2. Creamos un ambiente llamado clases con el siguiente comando:
@@ -62,6 +65,7 @@ conda create --name clases python=3.12.0
 
 El parámetro de python es opcional y es para especificar la versión de python a utilizar, por default utilizará la versión del base.
 Cuando sea solicitado presionar la tecla _y_ para proseguir con la instalación:
+
 ![](img/ambiente3.png)
 
 Una vez terminado el proceso, la terminal volverá a mostrar el prompt para poner una siguiente instrucción. En los mensajes del proceso vienen las instrucciones para activar y desactivar el ambiente:
@@ -87,6 +91,7 @@ En la sección de _Manejo de terminal veremos cómo podemos correr y asegurarnos
 4. Finalmente, si queremos desactivar el ambiente ya sea porque finalizamos la sesión de trabajo o queremos movernos de ambiente, podemos desactivarlo con el siguiente comando:
 
 ![](img/ambiente6.png)
+
 Observamos que el prompt pasa de mostrar que estamos dentro del ambiente clases, al ambiente base.
 
 ###  Instalación de librerías
@@ -94,7 +99,9 @@ Dentro de cualquier distribución de python que se instale, viene un manejador d
 La ventaja de usar estos manejadores es que también instalan las dependencias de otras librerías con las versiones que sean necesarias (puede desintalar una versión para instalar otra reciente si así lo necesitara) y de ahí que sea importante mantener separados los espacios de trabajo con los ambientes.  
 Dentro de la distribución de anaconda viene otro manejador de paqueterías _conda_ que va a buscar en las paqueterías de anaconda para hacer la instalación.  
 Si tienes una instalación de anaconda puedes utilizar tanto _pip_ como _conda_ como comandos para instalar paquetes.
+
 #### Ejemplo de instalación de paquetes
+
 Vamos a hacer un ejemplo instalando una paquetería en el entorno que ya creamos _clases_.  
 1. Abrir una terminal con entorno python (por ejemplo, Anaconda Prompt)
 2. Activar el ambiente con el siguiente comando:
@@ -112,6 +119,7 @@ pip install pandas=2.2.2
 La parte del comando donde se especifica la versión es opcional, también se puede instalar solo con _pip install pandas_
 
 ![](img/librerias1.png)
+
 Podemos observar que al hacer la instalación de _pandas_ también instaló _pytz, tzdata_ y _numpy_ y verificamos la instalación exitosa con el mensaje en la terminal y que ha terminado porque nos vuelve a poner el prompt para teclear algún comando.
 
 Podemos enlistar las librerías instaladas con el siguiente comando:
@@ -120,6 +128,7 @@ pip freeze
 ```
 
 ![](img/librerias2.png)
+
 Aunque sólo hicimos la instalación de una librería, ya tenemos muchas más instaladas por la creación del ambiente y por dependencias con la librería instalada.
 
 ### Manejo de terminal

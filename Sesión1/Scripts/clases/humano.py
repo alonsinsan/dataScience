@@ -8,6 +8,7 @@ Atributos:
 - mes_nacimiento: [int]
 - dia_nacimiento: [int]
 """
+
 from datetime import date # esta librería nos va a ayudar al cálculo de Edad más adelante
 
 class humano: # siempre después de 2 puntos va un indent en la siguiente línea, vsc los pone automáticamente
@@ -37,7 +38,7 @@ class humano: # siempre después de 2 puntos va un indent en la siguiente línea
             meses_edad = 12 + meses_edad
             años_edad = años_edad - 1
 
-        edad = "La edad de {} es de {} años, {} meses y {} días".format(self.primer_nombre, años_edad, meses_edad, dias_edad)
+        edad = "La edad de {} es de {} años, {} meses y {} días".format(self.nombre, años_edad, meses_edad, dias_edad)
 
         return edad # todas las funciones puede tener o no un return y pueden regresar varios elementos así return elemento_1, elemento_2, elemento_3, ..., elemento_n
 
